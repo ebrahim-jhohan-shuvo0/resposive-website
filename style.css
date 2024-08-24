@@ -27,6 +27,7 @@ nav{
     background: linear-gradient( to right, red , blue);
     color: transparent;
     -webkit-background-clip: text;
+
 }
 .logo-img img{
     width: 100%;
@@ -224,8 +225,100 @@ ul li a:hover{
     border-radius: 50%;
     margin: 0 8px;
    }
-  
- 
+
+   /*  =============header end============ */
+   .about-me{
+    background: #121010;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    position: relative;
+   } 
+   .about-me h3 , h2{
+     text-align: center;
+     margin-top: 20px;
+   }
+   .about-me h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fd054b;
+   }
+   .about-me h2{
+    color: transparent;
+    background: linear-gradient( to right, red, blue);
+    -webkit-background-clip: text;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+   }
+  .about-conteiner{
+    position: relative;
+    top: 0;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:1100px ;
+   margin-left: 200px;
+   margin-right: 200px;
+   margin-bottom:50px ;
+
+  }
+ .about-conteiner .about-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    height: 450px;
+    background: linear-gradient( to bottom,  rgb(255, 25, 17)30%,rgba(17, 0, 255,0.1)60% );
+    z-index: 100;
+    border-radius: 200px 200px 5px 5px;
+    overflow: hidden;
+  }
+   .about-img img{
+    position: relative;
+    padding: 25px 50px;
+    padding-left: -200px;
+  }
+  .about-content{
+    max-width: 450px;
+  }
+  .adress{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .adress span{
+    margin: 15px 0;
+  }
+  .adress a
+  {
+    display: inline-block;
+    text-decoration: none;
+    color: #fd054b;
+    margin: 15px 0;
+
+  }
+  .adress a i{
+    display: inline-block;
+    color:transparent;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    font-size: 25px;
+
+  }
+ .interrest-item{
+     display: flex;
+     justify-content: space-around;
+     font-size: 18px;
+     font-weight: 500;
+     color: #fd054b;
+     margin-top: 20px;
+ }
+ .interrest-item span{
+  color: #ded7d7;
+ }
 @media screen and (max-width: 540px) {
     .main-conteiner{
        
@@ -277,7 +370,48 @@ ul li a:hover{
     .main-icon{
         display: none;
     }
-   
+     /* ======= header code end======= */
 
-    
+     /* ==========- about area code start here=-======== */
+     .about-me{
+        background: #121010;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+       } 
+     .about-conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       margin-left: 50px;
+       margin-right: 50px;
+       width: 98%;
+      }
+      .about-p p{
+        text-align: center;
+      }
+      .about-conteiner .about-img{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+        height: 350px;
+        background: linear-gradient( to bottom,  rgb(255, 25, 17)30%,rgba(17, 0, 255,0.1)60% );
+        z-index: 100;
+        border-radius: 200px 200px 5px 5px;
+        overflow: hidden;
+      }
+      .about-img img{
+        position: relative;
+        padding: 10px;
+        padding-left: -200px;
+        transform: scale(.8);
+      }
+      .about-content{
+        margin-top: 50px;
+      }
+      
 }
