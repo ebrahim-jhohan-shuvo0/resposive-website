@@ -12,6 +12,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <!--   AOS animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- costom css -->
         <link rel="stylesheet" href="style.css">
         <!-- fontawsome -->
@@ -21,7 +23,7 @@
        <!-- navber -->
         <nav>
         <div class="logo-img">
-           <h2> EJS</h2>
+           <h2> EJ.S</h2>
         </div>
     
         <input type="checkbox" id="click">
@@ -39,8 +41,10 @@
        </nav> 
        <!-- main section code start -->
         <header class="main" id="main">
-            <div class="main-conteiner">
-                <div class="main-content">
+            <div class="main-conteiner" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="main-content" data-aos="fade-right">
                     <h4> I'm <span> Front-End Developer</span></h4>
                     <h2>Maximize your Business</h2>
                     <h1>
@@ -66,7 +70,7 @@
                         </button>
                   </div>
                 </div>
-                <div class="main-img">
+                <div class="main-img" data-aos="fade-left">
                    
                     <img src="image/main.png" alt="">
                     
@@ -75,26 +79,35 @@
             </div>
             
         </header>
-        <section class=" about-me">
+    <main>
+        <section class=" about-me" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <h3> My Intro</h3>
             <h2> About Me</h2>
-            <div class="about-conteiner">
+            <div class="about-conteiner" >
 
-                <div class="about-img">
-                    <img src="image/main.png" alt="">
+                <div class="about-img" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">">
+                    <img src="image/about (2).png" alt="">
                 </div>
-                 <div class="about-content">
+                 <div class="about-content" data-aos="zoom-in">
                     <div class="about-p">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae nulla consectetur esse obcaecati est officiis, molestiae dolorem aspernatur voluptatem laboriosam pariatur repellendus voluptate explicabo quidem, et dolore repudiandae, eum autem.</p>
+                        <p>"I am a highly skilled senior front end developer with over 2 years of experience in creating user-friendly, Error free  responsive websites........</p>
                     </div>
-                    <div class="adress">
-                        <pre>
+                    <div class="adress" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        <pre> 
 <a href="#">  <i class="fas fa-user"></i>   <span>Name : Ebrahim Jhohan Shuvo</span></a>
 <a href="#">  <i class="fas fa-phone"></i>   <span>Phone : +966 50 463 3092</span> </a>
 <a href="#">  <i class="fas fa-envelope">  </i><span>Email : ebrahimjhohanshuvo@gmail.com</span></a> 
                     </pre>
                     </div>
-                    <div class="my-interrest">
+                    <div class="my-interrest" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                         <h3> My Interrest</h3>
                       <div class="interrest-item">
                        <div>
@@ -118,9 +131,77 @@
                  </div>
             </div>
         </section>
-        <section class="my-skill">
+        <section class="my-skill" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+               <h2> Why choice me..... </h2>
+              <h3>My-skill</h3>
+              <div class="skill-conteiner">
+                 <div>
+                    <div class="skills" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
 
+                        <div class="skill">
+                          <div class="skill-name"> HTML</div>
+                          <div class="skill-ber">
+                            <div class="skill-per" per="88%" style="max-width: 88%">
+                            </div>
+                          </div>
+                        </div>
+                              <div class="skill">
+                          <div class="skill-name"> CSS</div>
+                          <div class="skill-ber">
+                            <div class="skill-per" per="79%" style="max-width: 79%">
+                            </div>
+                          </div>
+                        </div>
+                              <div class="skill">
+                          <div class="skill-name"> JavaScript</div>
+                          <div class="skill-ber">
+                            <div class="skill-per" per="46%" style="max-width: 48%">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="skills" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+
+                        <div class="skill">
+                          <div class="skill-name">TailwidCSS</div>
+                          <div class="skill-ber">
+                            <div class="skill-per" per="58%" style="max-width: 58%">
+                            </div>
+                          </div>
+                        </div>
+                              <div class="skill">
+                          <div class="skill-name">Bootstrap</div>
+                          <div class="skill-ber">
+                            <div class="skill-per" per="67%" style="max-width: 67%">
+                            </div>
+                          </div>
+                        </div>
+                              <div class="skill">
+                          <div class="skill-name"> React.js</div>
+                          <div class="skill-ber">
+                            <div class="skill-per-b" per="6%" style="max-width: 6%">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+              </div>    
         </section>
+
+       </main>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
     </body>
     </html>
 </body>
