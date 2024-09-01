@@ -324,7 +324,7 @@ ul li a:hover{
   .my-skill{
     /* width: 100%; */
     /* display: flex; */
-    background: #121010;
+    background: black;
     
   }
   .my-skill h2, h3{
@@ -394,7 +394,7 @@ ul li a:hover{
     right:0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
-    z-index: -1;
+    z-index: 1;
   }
   .skill-per-b{
     height: 14px;
@@ -425,7 +425,7 @@ ul li a:hover{
     right:0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
-    z-index: -1;
+     z-index: 1; 
   }
   
   
@@ -435,10 +435,55 @@ ul li a:hover{
     }
     
     to {
-    height:100%;
+    width:100%;
     }
   }
+
+  /* =====================================skill code end here===================================== */
+
+  .protfolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+  .protfolio h2{
+    color: #fff;
+}
+  .protfolio h3 {
+    color:transparent;
+    background:linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    background-position: center center;
+    display: inline-block;
+   margin: 0 auto;
+   text-align: center;
+   
+}
+  .profolio-conteiner{
+    margin: 0 auto;
+    display: grid;
+    width: 1100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .profolio-conteiner img{
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, red, blue)
+    border-box;
+    border:transparent 4px solid;
+    transition: all .5s;
+  }
+  .profolio-conteiner img:hover{
+    transform: scaleX(1.1);
+  }
 @media screen and (max-width: 540px) {
+    
     .main-conteiner{
        
       margin-right: 50px;
@@ -544,6 +589,7 @@ ul li a:hover{
         margin: 0 auto;
       }
       .skills{
+        overflow-x: none;
         width:10%;
         /* max-width: 800px; */
         padding: 0 20px;
@@ -555,4 +601,22 @@ ul li a:hover{
         background: #282828;
         border-radius: 3px;
       }
+
+      /* ==========================skill area code end here=========================== */
+      .profolio-conteiner{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+      }
+      .profolio-conteiner img{
+        width: 100%;
+    }
+    .profolio-conteiner img:hover
+    {
+      transform: scaleX(1.1);
+    }
+
 }
